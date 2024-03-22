@@ -1,4 +1,4 @@
-![](https://cdn.wallpapersafari.com/15/56/jQbuZf.gif)
+![](https://github.com/SadmanYasar/nutritionist-ai-app/assets/67522140/c67bd34c-082e-4343-a5e8-cb0bf7f37ee4)
 
 <center>
   <a href="https://github.com/anuraghazra/github-readme-stats">

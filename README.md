@@ -10,4 +10,3 @@
 </center>
 
 [img1]: https://github.com/SadmanYasar/nutritionist-ai-app/assets/67522140/c67bd34c-082e-4343-a5e8-cb0bf7f37ee4
-[img2]: 

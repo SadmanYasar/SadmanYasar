@@ -1,6 +1,6 @@
 <div align="center">
 
-![Header Banner][img1]
+![Header Banner][img2]
 
 <br>
 
@@ -20,3 +20,4 @@
 </div>
 
 [img1]: https://github.com/SadmanYasar/nutritionist-ai-app/assets/67522140/c67bd34c-082e-4343-a5e8-cb0bf7f37ee4
+[img2]: https://github.com/user-attachments/assets/f2bd0d4f-4dbd-403d-a201-0faccd61eaac

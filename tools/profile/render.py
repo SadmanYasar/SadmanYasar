@@ -116,6 +116,7 @@ def header_top():
 
   <text x="814" y="28" text-anchor="end" font-family="mono" font-size="10.5" fill="{MUTED}">CODEC FREQ</text>
   <text x="814" y="48" text-anchor="end" font-family="display" font-size="18" fill="{AMBER}">140.85</text>
+  <desc>La-Li-Lu-Le-Lo</desc>
   <line x1="26" y1="72" x2="814" y2="72" stroke="{BORDER}" stroke-width="1"/>
 """
     return svg_wrap(W, 76, body, text_sample="SADMAN PROFILE CODEC FREQ 140.85")
@@ -294,8 +295,9 @@ def radar(stats):
 {day_labels}
 {"".join(rects)}
 <text x="38" y="176" font-family="mono" font-size="9.5" fill="{MUTED}">SIGNAL:  LOW <tspan fill="#2E3B25">■</tspan>  MED <tspan fill="#4F6B3A">■</tspan>  HIGH <tspan fill="{GREEN}">■</tspan>  PEAK <tspan fill="{AMBER}">■</tspan></text>
+<text x="798" y="176" text-anchor="end" font-family="mono" font-size="8.5" fill="#23291C" letter-spacing="1.2">LA-LI-LU-LE-LO</text>
 """
-    return svg_wrap(W, 200, body, text_sample=f"SOLITON RADAR 52-WEEK ACTIVITY {total} CONTRIBUTIONS SUNMONSIGNAL")
+    return svg_wrap(W, 200, body, text_sample=f"SOLITON RADAR 52-WEEK ACTIVITY {total} CONTRIBUTIONS SUNMONSIGNAL LA-LI-LU-LE-LO")
 
 
 def ops(stats):

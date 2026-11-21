@@ -17,7 +17,7 @@
   <text x="52" y="64" font-family="display" font-size="15" fill="#E6E4D5" letter-spacing="1.5">PROFILE</text>
 
   <text x="814" y="28" text-anchor="end" font-family="mono" font-size="10.5" fill="#8E967C">CODEC FREQ</text>
-  <text x="814" y="48" text-anchor="end" font-family="display" font-size="18" fill="#E39856">140.85</text>
+  <text x="814" y="48" text-anchor="end" font-family="display" font-size="18" fill="#E39856">140.15</text>
   <desc>La-Li-Lu-Le-Lo</desc>
   <line x1="26" y1="72" x2="814" y2="72" stroke="#4B533C" stroke-width="1"/>
 </svg>

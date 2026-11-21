@@ -23,18 +23,19 @@ def linked(url, image):
 
 
 def brief(stats):
-    links = "".join(linked(url, img(name, label, "20%")) for name, _, label, url in LINKS)
+    # 19.8% x 5 = 99% and 49.8% x 2 = 99.6% prevents subpixel wrapping on odd-width mobile screens
+    links = "".join(linked(url, img(name, label, "19.8%")) for name, _, label, url in LINKS)
     cards = [
-        linked(url, img(f"op-{i + 1}", f"{title}: {desc}", "50%"))
+        linked(url, img(f"op-{i + 1}", f"{title}: {desc}", "49.8%"))
         for i, (title, desc, _, url) in enumerate(ops(stats))
     ]
     hero_row = (
-        img("cat_idle", "3D Blue-Eyed Persian Cat Operative (Idle Animation)", "45.71%", ext="gif")
-        + img("header_loadout", "Loadout // Tech Stack", "54.29%")
+        img("cat_idle", "3D Blue-Eyed Persian Cat Operative (Idle Animation)", "49.8%", ext="gif")
+        + img("header_loadout", "Loadout // Tech Stack", "49.8%")
     )
     return "\n".join([
         '<div align="center">',
-        img("header_top", "PROFILE — Sadman Yasar Sayem, Codec 140.85"),
+        img("header_top", "PROFILE — Sadman Yasar Sayem, Codec 140.15"),
         hero_row,
         links,
         img("record", f"Live Telemetry: {stats.get('followers', 0):,} followers, {stats.get('stars', 0):,} stars, "
@@ -42,7 +43,7 @@ def brief(stats):
         img("city", "Soliton Radar: 52-Week Activity Matrix"),
         *pairs(cards),
         img("stack", "Equipment / Tech Stack: " + "; ".join(f"{k}: {v}" for k, v in STACK)),
-        img("footer", "Codec 140.85 // Auto-synced daily by GitHub Actions."),
+        img("footer", "Codec 140.15 // Auto-synced daily by GitHub Actions."),
         "</div>",
     ])
 

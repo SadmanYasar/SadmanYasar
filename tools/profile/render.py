@@ -193,16 +193,16 @@ def header_loadout():
         f'<text x="201" y="21" text-anchor="middle" font-family="display" font-size="11.5" fill="{DARK_INK}" letter-spacing="1.5">LOADOUT // TECH STACK</text>',
     ]
     for i, (label, val, selected) in enumerate(menu_items):
-        y = 38 + i * 38.5
+        y = 38 + i * 39
         row_bg = CREAM_SEL if selected else PANEL
         txt_col = DARK_INK if selected else TEXT
         swatch_col = AMBER if selected else (GREEN if i % 2 == 0 else OLIVE)
         rows_svg.append(
-            f'<rect x="8" y="{y:.1f}" width="386" height="32" fill="{row_bg}" stroke="{BORDER}" stroke-width="1"/>'
-            f'<rect x="10" y="{y + 2:.1f}" width="52" height="28" fill="{swatch_col}"/>'
-            f'<text x="36" y="{y + 20:.1f}" text-anchor="middle" font-family="mono" font-size="10" fill="{DARK_INK}">0{i + 1}</text>'
-            f'<text x="72" y="{y + 21:.1f}" font-family="mono" font-size="12" fill="{txt_col}">{escape(label)}</text>'
-            f'<text x="384" y="{y + 21:.1f}" text-anchor="end" font-family="mono" font-size="11.5" fill="{txt_col}">{escape(val)}</text>'
+            f'<rect x="8" y="{y}" width="386" height="33" fill="{row_bg}" stroke="{BORDER}" stroke-width="1"/>'
+            f'<rect x="10" y="{y + 2}" width="52" height="29" fill="{swatch_col}"/>'
+            f'<text x="36" y="{y + 21}" text-anchor="middle" font-family="mono" font-size="10" fill="{DARK_INK}">0{i + 1}</text>'
+            f'<text x="72" y="{y + 21}" font-family="mono" font-size="12" fill="{txt_col}">{escape(label)}</text>'
+            f'<text x="384" y="{y + 21}" text-anchor="end" font-family="mono" font-size="11.5" fill="{txt_col}">{escape(val)}</text>'
         )
     txt = "LOADOUT TECH STACK" + "".join(l + v for l, v, _ in menu_items)
     return svg_wrap(420, 360, "\n".join(rows_svg), text_sample=txt)

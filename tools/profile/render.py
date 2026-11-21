@@ -115,19 +115,19 @@ def header_top():
   <text x="52" y="64" font-family="display" font-size="15" fill="{TEXT}" letter-spacing="1.5">PROFILE</text>
 
   <text x="814" y="28" text-anchor="end" font-family="mono" font-size="10.5" fill="{MUTED}">CODEC FREQ</text>
-  <text x="814" y="48" text-anchor="end" font-family="display" font-size="18" fill="{AMBER}">140.85</text>
+  <text x="814" y="48" text-anchor="end" font-family="display" font-size="18" fill="{AMBER}">140.15</text>
   <desc>La-Li-Lu-Le-Lo</desc>
   <line x1="26" y1="72" x2="814" y2="72" stroke="{BORDER}" stroke-width="1"/>
 """
-    return svg_wrap(W, 76, body, text_sample="SADMAN PROFILE CODEC FREQ 140.85")
+    return svg_wrap(W, 76, body, text_sample="SADMAN PROFILE CODEC FREQ 140.15")
 
 
 def build_cat_idle_gif(out_path):
-    """Build a 384 x 360 looping idle animation GIF of the 3D MGS cat render."""
+    """Build a 420 x 360 looping idle animation GIF of the 3D MGS cat render."""
     base = Image.open(MGS_CAT_3D).convert("RGB")
-    gw, gh = 384, 360
-    # Crop inside outer MGS panel: left pad=26, right pad=10, top=4, bottom=14 -> inner 348 x 342
-    iw, ih = 348, 342
+    gw, gh = 420, 360
+    # Crop inside outer MGS panel: left pad=26, right pad=10, top=4, bottom=14 -> inner 384 x 342
+    iw, ih = 384, 342
     ix, iy = 26, 4
     base_fit = ImageOps.fit(base, (iw + 10, ih + 10), Image.Resampling.LANCZOS, centering=(0.5, 0.38))
 
@@ -177,7 +177,7 @@ def build_cat_idle_gif(out_path):
 
 
 def header_loadout():
-    """Right Loadout Pane (456 x 360) aligned flush with cat_idle.gif (384 x 360)."""
+    """Right Loadout Pane (420 x 360) aligned flush 50/50 with cat_idle.gif (420 x 360)."""
     menu_items = [
         ("TYPESCRIPT / JAVASCRIPT", "PRIMARY ✓", True),
         ("REACT / NEXT.JS", "FRONTEND", False),
@@ -189,8 +189,8 @@ def header_loadout():
         ("AWS / GCP / DIGITALOCEAN", "CLOUD", False),
     ]
     rows_svg = [
-        f'<rect x="12" y="4" width="418" height="26" fill="{CREAM_SEL}" stroke="{BORDER}" stroke-width="1"/>',
-        f'<text x="221" y="21" text-anchor="middle" font-family="display" font-size="11.5" fill="{DARK_INK}" letter-spacing="1.5">LOADOUT // TECH STACK</text>',
+        f'<rect x="8" y="4" width="386" height="26" fill="{CREAM_SEL}" stroke="{BORDER}" stroke-width="1"/>',
+        f'<text x="201" y="21" text-anchor="middle" font-family="display" font-size="11.5" fill="{DARK_INK}" letter-spacing="1.5">LOADOUT // TECH STACK</text>',
     ]
     for i, (label, val, selected) in enumerate(menu_items):
         y = 38 + i * 38.5
@@ -198,14 +198,14 @@ def header_loadout():
         txt_col = DARK_INK if selected else TEXT
         swatch_col = AMBER if selected else (GREEN if i % 2 == 0 else OLIVE)
         rows_svg.append(
-            f'<rect x="12" y="{y:.1f}" width="418" height="32" fill="{row_bg}" stroke="{BORDER}" stroke-width="1"/>'
-            f'<rect x="14" y="{y + 2:.1f}" width="60" height="28" fill="{swatch_col}"/>'
-            f'<text x="44" y="{y + 20:.1f}" text-anchor="middle" font-family="mono" font-size="10" fill="{DARK_INK}">0{i + 1}</text>'
-            f'<text x="86" y="{y + 21:.1f}" font-family="mono" font-size="12.5" fill="{txt_col}">{escape(label)}</text>'
-            f'<text x="418" y="{y + 21:.1f}" text-anchor="end" font-family="mono" font-size="12.5" fill="{txt_col}">{escape(val)}</text>'
+            f'<rect x="8" y="{y:.1f}" width="386" height="32" fill="{row_bg}" stroke="{BORDER}" stroke-width="1"/>'
+            f'<rect x="10" y="{y + 2:.1f}" width="52" height="28" fill="{swatch_col}"/>'
+            f'<text x="36" y="{y + 20:.1f}" text-anchor="middle" font-family="mono" font-size="10" fill="{DARK_INK}">0{i + 1}</text>'
+            f'<text x="72" y="{y + 21:.1f}" font-family="mono" font-size="12" fill="{txt_col}">{escape(label)}</text>'
+            f'<text x="384" y="{y + 21:.1f}" text-anchor="end" font-family="mono" font-size="11.5" fill="{txt_col}">{escape(val)}</text>'
         )
     txt = "LOADOUT TECH STACK" + "".join(l + v for l, v, _ in menu_items)
-    return svg_wrap(456, 360, "\n".join(rows_svg), text_sample=txt)
+    return svg_wrap(420, 360, "\n".join(rows_svg), text_sample=txt)
 
 
 def nav_link(btn, label, accent):
@@ -341,7 +341,7 @@ def stack():
 
 
 def footer():
-    msg = "CODEC 140.85 // AUTO-SYNCED DAILY BY GITHUB ACTIONS // GITHUB.COM/SADMANYASAR"
+    msg = "CODEC 140.15 // AUTO-SYNCED DAILY BY GITHUB ACTIONS // GITHUB.COM/SADMANYASAR"
     body = f"""
 <line x1="26" y1="8" x2="814" y2="8" stroke="{BORDER}" stroke-width="1"/>
 <text x="420" y="32" text-anchor="middle" font-family="mono" font-size="10.5" fill="{MUTED}" letter-spacing="1">{msg}</text>

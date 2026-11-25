@@ -2519,12 +2519,13 @@
   "2026-11-21": 18,
   "2026-11-22": 0,
   "2026-11-23": 6,
-  "2026-11-24": 10
+  "2026-11-24": 10,
+  "2026-11-25": 0
  },
  "contributions_all_time": 7709,
  "contributions_this_year": 3032,
  "created_at": "2020-06-27T20:55:14Z",
- "followers": 39,
+ "followers": 38,
  "login": "SadmanYasar",
  "name": "Sadman Yasar Sayem",
  "ops": [
@@ -2549,7 +2550,7 @@
     "HTML"
    ],
    "name": "3d-spritesheet-studio",
-   "stars": 3,
+   "stars": 2,
    "url": "https://github.com/SadmanYasar/3d-spritesheet-studio"
   },
   {
@@ -2559,7 +2560,7 @@
     "Go"
    ],
    "name": "agent-in-go",
-   "stars": 3,
+   "stars": 2,
    "url": "https://github.com/SadmanYasar/agent-in-go"
   },
   {
@@ -2588,28 +2589,6 @@
    "name": "pathao-merchant-client",
    "stars": 4,
    "url": "https://github.com/SadmanYasar/pathao-merchant-client"
-  },
-  {
-   "description": "",
-   "forks": 0,
-   "languages": [
-    "Go"
-   ],
-   "name": "agent-in-go",
-   "stars": 3,
-   "url": "https://github.com/SadmanYasar/agent-in-go"
-  },
-  {
-   "description": "Convert 3D models and real-time webcam face captures into customizable 2D spritesheets, texture atlases, PNG sequences, and animated GIFs with MediaPipe 3D face mesh tracking, background removal, and live interactive cursor look-at simulation.",
-   "forks": 0,
-   "languages": [
-    "TypeScript",
-    "CSS",
-    "HTML"
-   ],
-   "name": "3d-spritesheet-studio",
-   "stars": 3,
-   "url": "https://github.com/SadmanYasar/3d-spritesheet-studio"
   },
   {
    "description": "An enhanced webapp for Sketchfab models with additional features",
@@ -2701,6 +2680,28 @@
    "name": "SadmanYasarPortfolio",
    "stars": 3,
    "url": "https://github.com/SadmanYasar/SadmanYasarPortfolio"
+  },
+  {
+   "description": "",
+   "forks": 0,
+   "languages": [
+    "Go"
+   ],
+   "name": "agent-in-go",
+   "stars": 2,
+   "url": "https://github.com/SadmanYasar/agent-in-go"
+  },
+  {
+   "description": "Convert 3D models and real-time webcam face captures into customizable 2D spritesheets, texture atlases, PNG sequences, and animated GIFs with MediaPipe 3D face mesh tracking, background removal, and live interactive cursor look-at simulation.",
+   "forks": 0,
+   "languages": [
+    "TypeScript",
+    "CSS",
+    "HTML"
+   ],
+   "name": "3d-spritesheet-studio",
+   "stars": 2,
+   "url": "https://github.com/SadmanYasar/3d-spritesheet-studio"
   },
   {
    "description": "An ADK 2.0 multi-agent guardrail that screens pull requests for security flaws and AST violations before executing safe LLM code reviews.",
@@ -2915,16 +2916,6 @@
    "name": "3d-linktree",
    "stars": 2,
    "url": "https://github.com/SadmanYasar/3d-linktree"
-  },
-  {
-   "description": "Config files for my GitHub profile.",
-   "forks": 0,
-   "languages": [
-    "Python"
-   ],
-   "name": "SadmanYasar",
-   "stars": 2,
-   "url": "https://github.com/SadmanYasar/SadmanYasar"
   },
   {
    "description": "Top Down 3D Shooter",
@@ -3411,6 +3402,16 @@
    "url": "https://github.com/SadmanYasar/ConsoleMatrix"
   },
   {
+   "description": "Config files for my GitHub profile.",
+   "forks": 0,
+   "languages": [
+    "Python"
+   ],
+   "name": "SadmanYasar",
+   "stars": 1,
+   "url": "https://github.com/SadmanYasar/SadmanYasar"
+  },
+  {
    "description": "",
    "forks": 0,
    "languages": [
@@ -3718,7 +3719,7 @@
    "url": "https://github.com/SadmanYasar/SadmanYasar17"
   }
  ],
- "stars": 111,
+ "stars": 108,
  "streak_current": 2,
  "streak_longest": 46,
  "years": [
